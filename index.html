@@ -3,17 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FPO/SHG Marketplace</title>
+  <title>FPO-SHG Marketplace - Empowering Rural India</title>
   <link rel="stylesheet" href="styles.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
   <style>
+    /* Updated color variables to match new CSS */
     :root {
-      --primary: #B5DE76;
-      --secondary: #F2EE1B;
-      --accent: #E9EDF5;
+      --primary: #4300FF;
+      --secondary: #0065F8;
+      --accent: #00CAFF;
+      --quaternary: #00FFDE;
       --bg-primary: #ffffff;
       --bg-secondary: #f9f9f9;
-      --text-primary: #333;
-      --text-secondary: #555;
+      --text-primary: #333333;
+      --text-secondary: #555555;
       --white: #ffffff;
       --shadow-light: #ffffff;
       --shadow-dark: #d1d9e6;
@@ -21,6 +24,7 @@
   </style>
 </head>
 <body>
+  <!-- Navigation -->
   <nav class="navbar">
     <div class="logo">
       <div class="logo-icon">F</div>
@@ -30,139 +34,425 @@
       <li><a href="#about">About</a></li>
       <li><a href="#products">Products</a></li>
       <li><a href="#empowerment">Empowerment</a></li>
-      <li><a href="#blog">Blog</a></li>
       <li><a href="#contact">Contact</a></li>
+      <li><a href="#blog">Blog</a></li>
     </ul>
-    <div class="header-buttons">
-      <a href="#" class="app-store-btn">
-        <i class="fab fa-apple"></i>
-                    Apple Store
+    <div class="cta-buttons">
+      <a href="#" class="store-button apple-store">
+        <i class="fab fa-apple store-icon"></i>
+        Apple Store
       </a>
-      <a href="#" class="app-store-btn">
-        <i class="fab fa-google-play"></i>
-                    Play Store
+      <a href="#" class="store-button play-store">
+        <i class="fab fa-google-play store-icon"></i>
+        Play Store
       </a>
-      <a href="https://zypgo.in" target="_blank" class="cta-button">Visit ZYPGO</a>
+      <a href="https://zypgo.in" class="cta-button">
+        Visit Zypgo
+      </a>
     </div>
   </nav>
 
+  <!-- Hero Section -->
   <header class="hero">
-    <div class="floating-element"></div>
-    <div class="floating-element"></div>
-    <div class="floating-element"></div>
-    
     <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-leaf"></i>
+        <span>Supporting Rural Communities</span>
+      </div>
       <h1>Empowering Rural India</h1>
-      <p>Discover local treasures from Women SHGs and FPOs. Support sustainability and tradition with every purchase.</p>
+      <p>Discover local treasures from Women SHGs and FPOs. Support sustainability and tradition with every purchase from authentic rural enterprises.</p>
+      
+      <!-- Hero Stats -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">500+</span>
+          <span class="stat-label">Women Artisans</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">FPO Partners</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Districts Covered</span>
+        </div>
+      </div>
+
       <div class="hero-buttons">
-        <a href="#products" class="btn-primary">Explore Products</a>
-        <a href="#about" class="btn-secondary">Learn About FPO/SHG</a>
+        <a href="#products" class="btn-primary">
+          <i class="fas fa-shopping-bag"></i>
+          Explore Products
+        </a>
+        <a href="#about" class="btn-secondary">
+          <i class="fas fa-info-circle"></i>
+          Learn About FPO/SHG
+        </a>
       </div>
     </div>
+    
     <div class="hero-image">
-      <div class="hero-illustration">🌾</div>
+      <div class="hero-illustration">
+        <i class="fas fa-seedling"></i>
+      </div>
+      <!-- Floating elements for visual appeal -->
+      <div class="floating-elements">
+        <div class="floating-element">
+          <i class="fas fa-hands-helping floating-icon"></i>
+        </div>
+        <div class="floating-element">
+          <i class="fas fa-heart floating-icon"></i>
+        </div>
+        <div class="floating-element">
+          <i class="fas fa-leaf floating-icon"></i>
+        </div>
+      </div>
     </div>
   </header>
 
+  <!-- About Section -->
   <section id="about" class="services">
     <div class="section-container">
       <h2 class="section-title">What are FPOs and SHGs?</h2>
-      <p class="section-subtitle">FPOs (Farmer Producer Organizations) and SHGs (Self-Help Groups) are rural collectives that uplift communities through collaboration and entrepreneurship, particularly for women and farmers.</p>
+      <p class="section-subtitle">FPOs (Farmer Producer Organizations) and SHGs (Self-Help Groups) are rural collectives that uplift communities through collaboration and entrepreneurship, particularly empowering women and farmers across India.</p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3>Self-Help Groups (SHGs)</h3>
+          <p>Community-based organizations of 10-20 women who come together for mutual support, savings, and entrepreneurship development.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-tractor"></i>
+          </div>
+          <h3>Farmer Producer Organizations</h3>
+          <p>Collective business organizations of farmers that provide better market access, input procurement, and technology adoption.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-handshake"></i>
+          </div>
+          <h3>Community Impact</h3>
+          <p>Creating sustainable livelihoods, preserving traditional crafts, and building economic independence in rural communities.</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Empowerment Section -->
   <section id="empowerment" class="services">
     <div class="section-container">
       <h2 class="section-title">Empowering Women Through Enterprise</h2>
-      <p class="section-subtitle">Explore stories of impact, independence, and innovation across Odisha—from Sambalpur to Koraput.</p>
+      <p class="section-subtitle">Explore stories of impact, independence, and innovation across Odisha—from Sambalpur's handlooms to Koraput's organic millets.</p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-female"></i>
+          </div>
+          <h3>Women Leadership</h3>
+          <p>Empowering women to become entrepreneurs and community leaders through skill development and financial literacy.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-coins"></i>
+          </div>
+          <h3>Financial Inclusion</h3>
+          <p>Providing access to credit, savings, and insurance services to support women's entrepreneurial ventures.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-graduation-cap"></i>
+          </div>
+          <h3>Skill Development</h3>
+          <p>Training programs in traditional crafts, modern techniques, and business management for sustainable growth.</p>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Products Section -->
   <section id="products" class="services">
     <div class="section-container">
       <h2 class="section-title">Explore Our Products</h2>
-      <h3 class="service-category-title">Millets from Koraput</h3>
+      
+      <h3 class="service-category-title">
+        <i class="fas fa-seedling"></i> Millets from Koraput
+      </h3>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">🌾</div>
+          <div class="service-icon">
+            <i class="fas fa-wheat-awn"></i>
+          </div>
           <h3>Organic Ragi</h3>
-          <p>Locally grown, pesticide-free ragi rich in calcium and iron.</p>
+          <p>Locally grown, pesticide-free ragi rich in calcium and iron. Perfect for healthy nutrition and traditional recipes.</p>
+          <div class="product-price">₹180/kg</div>
         </div>
         <div class="service-card">
-          <div class="service-icon">🌾</div>
+          <div class="service-icon">
+            <i class="fas fa-grain"></i>
+          </div>
           <h3>Bajra Mix</h3>
-          <p>A wholesome blend of bajra and other millets, great for energy.</p>
+          <p>A wholesome blend of bajra and other millets, great for energy and nutrition. Ideal for healthy living.</p>
+          <div class="product-price">₹160/kg</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Little Millet</h3>
+          <p>Traditional little millet known for its high fiber content and nutritional benefits. Gluten-free superfood.</p>
+          <div class="product-price">₹200/kg</div>
         </div>
       </div>
-      <h3 class="service-category-title">Handloom from Sambalpur</h3>
+      
+      <h3 class="service-category-title">
+        <i class="fas fa-palette"></i> Handloom from Sambalpur
+      </h3>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">🧣</div>
+          <div class="service-icon">
+            <i class="fas fa-tshirt"></i>
+          </div>
           <h3>Sambalpuri Sarees</h3>
-          <p>Traditional handwoven sarees with rich cultural designs.</p>
+          <p>Traditional handwoven sarees with rich cultural designs and authentic ikat patterns. Heritage in every thread.</p>
+          <div class="product-price">₹2,500 - ₹8,000</div>
         </div>
         <div class="service-card">
-          <div class="service-icon">👜</div>
+          <div class="service-icon">
+            <i class="fas fa-shopping-bag"></i>
+          </div>
           <h3>Handloom Bags</h3>
-          <p>Eco-friendly, stylish bags made from pure cotton threads.</p>
+          <p>Eco-friendly, stylish bags made from pure cotton threads. Perfect blend of tradition and modern utility.</p>
+          <div class="product-price">₹400 - ₹1,200</div>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-scarf"></i>
+          </div>
+          <h3>Traditional Stoles</h3>
+          <p>Beautifully crafted stoles with traditional Odia motifs. Elegant accessories for modern wardrobes.</p>
+          <div class="product-price">₹800 - ₹2,000</div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <section id="blog" class="services">
-    <div class="section-container">
-      <h2 class="section-title">Latest Stories</h2>
-      <p class="section-subtitle">Read inspiring stories from our community and learn about sustainable rural development.</p>
+      <h3 class="service-category-title">
+        <i class="fas fa-leaf"></i> Organic Products
+      </h3>
       <div class="services-grid">
         <div class="service-card">
-          <div class="service-icon">📝</div>
-          <h3>Women Leading Change</h3>
-          <p>How SHGs in Sambalpur are transforming lives through handloom revival.</p>
+          <div class="service-icon">
+            <i class="fas fa-honey-pot"></i>
+          </div>
+          <h3>Wild Honey</h3>
+          <p>Pure, raw honey collected from tribal areas. Rich in antioxidants and natural enzymes for health benefits.</p>
+          <div class="product-price">₹450/500g</div>
         </div>
         <div class="service-card">
-          <div class="service-icon">🌱</div>
-          <h3>Millet Revolution</h3>
-          <p>The comeback of traditional grains and their impact on farmer incomes.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🤝</div>
-          <h3>Community Impact</h3>
-          <p>Success stories from FPO collectives across rural Odisha.</p>
+          <div class="service-icon">
+            <i class="fas fa-pepper-hot"></i>
+          </div>
+          <h3>Organic Spices</h3>
+          <p>Traditional spice blends and whole spices grown organically. Authentic flavors from rural kitchens.</p>
+          <div class="product-price">₹80 - ₹300</div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact" class="services">
+    <div class="section-container">
+      <h2 class="section-title">Connect With Us</h2>
+      <p class="section-subtitle">Join our mission to support rural entrepreneurs and discover authentic products directly from the source.</p>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <h3>Call Us</h3>
+          <p>+91 98765 43210<br>Monday to Saturday, 9 AM - 6 PM</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <h3>Email Us</h3>
+          <p>fpo.shg@zypgo.in<br>We'll respond within 24 hours</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>Visit Us</h3>
+          <p>Sambalpur, Odisha<br>Supporting communities across the state</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="footer">
     <div class="footer-container">
       <div>
         <h3>FPO/SHG Market</h3>
-        <p>Support local women artisans and farmer collectives. Every product makes a difference.</p>
+        <p>Support local women artisans and farmer collectives. Every product makes a difference in someone's life and preserves our rich cultural heritage.</p>
       </div>
       <div>
         <h4>Explore</h4>
         <ul class="footer-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#products">Products</a></li>
-          <li><a href="#empowerment">Empowerment</a></li>
-          <li><a href="#blog">Blog</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#about">About FPO/SHG</a></li>
+          <li><a href="#products">Our Products</a></li>
+          <li><a href="#empowerment">Women Empowerment</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Products</h4>
+        <ul class="footer-links">
+          <li><a href="#products">Organic Millets</a></li>
+          <li><a href="#products">Handloom Textiles</a></li>
+          <li><a href="#products">Natural Honey</a></li>
+          <li><a href="#products">Traditional Crafts</a></li>
         </ul>
       </div>
       <div>
         <h4>Connect</h4>
         <ul class="footer-links">
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">LinkedIn</a></li>
-          <li><a href="#">Twitter</a></li>
+          <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+          <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+          <li><a href="#"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2025 Zyp. All rights reserved. | Designed with ❤️ in Sambalpur</p>
+      <p>&copy; 2025 Zyp. All rights reserved. | Designed with ❤️ in Sambalpur</p> | Powered by <a href="https://zypgo.in" style="color: var(--quaternary);">Zypgo</a> | Empowering Rural India</p>
     </div>
   </footer>
+
+  <style>
+    /* Additional styles for product pricing */
+    .product-price {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-top: 1rem;
+      padding: 0.5rem;
+      background: linear-gradient(135deg, var(--accent), var(--quaternary));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Enhanced floating elements */
+    .floating-elements {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      justify-content: center;
+    }
+
+    .floating-element {
+      width: 50px;
+      height: 50px;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: float 3s ease-in-out infinite;
+      box-shadow: 0 4px 15px rgba(67, 0, 255, 0.2);
+      backdrop-filter: blur(10px);
+    }
+
+    .floating-element:nth-child(1) { animation-delay: 0s; }
+    .floating-element:nth-child(2) { animation-delay: 1s; }
+    .floating-element:nth-child(3) { animation-delay: 2s; }
+
+    .floating-icon {
+      font-size: 1.2rem;
+      color: var(--primary);
+    }
+
+    /* Hero stats styling */
+    .hero-stats {
+      display: flex;
+      gap: 2rem;
+      margin: 2rem 0;
+      justify-content: flex-start;
+    }
+
+    .stat-item {
+      text-align: left;
+    }
+
+    .stat-number {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--primary);
+      display: block;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Hero badge styling */
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255, 255, 255, 0.9);
+      padding: 8px 20px;
+      border-radius: 25px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(67, 0, 255, 0.1);
+    }
+
+    .hero-badge i {
+      color: var(--primary);
+    }
+
+    /* Service category title enhancement */
+    .service-category-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      font-size: 1.8rem;
+      color: var(--secondary);
+      text-align: center;
+      margin: 3rem 0 1.5rem 0;
+    }
+
+    .service-category-title i {
+      color: var(--primary);
+    }
+
+    @media (max-width: 768px) {
+      .hero-stats {
+        justify-content: center;
+        gap: 1.5rem;
+      }
+
+      .stat-item {
+        text-align: center;
+      }
+
+      .floating-elements {
+        display: none;
+      }
+    }
+  </style>
 </body>
 </html>
